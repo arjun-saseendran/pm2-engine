@@ -19,8 +19,9 @@ app.use(cors({
 
 // ─── pm2 name → port map ──────────────────────────────────────────────────────
 const ENGINES = {
-  ic: { name: "iron-condor",  port: 3002 },
-  tl: { name: "trafic-light", port: 3001 },
+  ic: { name: "iron-condor",   port: 3002 },
+  tl: { name: "trafic-light",  port: 3001 },
+  dn: { name: "debit-neutral", port: 3004 },
 };
 
 // Run a shell command, return stdout/stderr
